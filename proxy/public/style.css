@@ -1,14 +1,31 @@
-#Info {
-  display: block;
+body {
+  display: grid;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: auto auto;
+  grid-template-areas: "details cart"
+                       "reviews cart";
+}
+#productDetails {
+  grid-area: details;
+  display: flexbox;
 }
 
-#CountDown {
+#app {
+  grid-area: cart;
   margin-left: 5px;
   display: inline-block;
 }
 
-#Related {
+#reviewApp {
+  grid-area: reviews;
   margin: 10%;
   display: block;
 }
 
+.navbar {
+  /* display: inline-block; */
+  float: left;
+  width: 75.85%;
+    /* border-bottom: 1px solid #ccc; */
+  padding: 7px 7px 7px 0;
+}
