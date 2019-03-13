@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "nodemon ./server.js",
+    "art_dev": "artillery run ./test/artillery/dev.yaml"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "artillery": "^1.6.0-27",
     "cors": "^2.8.5",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
